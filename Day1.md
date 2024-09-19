@@ -19,7 +19,7 @@ In deep learning frameworks like TensorFlow and Keras, convolution can be perfor
 - **Keras**: `Conv2D`
 
 Below is an illustration of edge detection using a vertical edge detection filter:
-![Edge Detection Example](/path_to_your_image_file)
+![Edge Detection Example](edged.png)
 
 By applying a convolution filter, edges can be detected in an image. Different filters (such as Sobel or Prewitt filters) can be used to detect horizontal, vertical, or diagonal edges.
 
