@@ -45,7 +45,7 @@ output = tf.nn.conv2d(image, kernel, strides=[1, 1, 1, 1], padding='VALID')
 
 print(output)
 
-other kinds of filter
+    other kinds of filter
 1.sobel filter
 2.scharr filter
 can also make the machine learn the 9 parameters itself
