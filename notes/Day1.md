@@ -1,4 +1,4 @@
-# Edge Detection
+# 1.Edge Detection
 
 Edge detection can be performed using convolution. A filter (also known as a kernel) is used to convolve an image.
 
@@ -44,3 +44,8 @@ kernel = kernel.reshape((3, 3, 1, 1))
 output = tf.nn.conv2d(image, kernel, strides=[1, 1, 1, 1], padding='VALID')
 
 print(output)
+
+other kinds of filter
+1.sobel filter
+2.scharr filter
+can also make the machine learn the 9 parameters itself
