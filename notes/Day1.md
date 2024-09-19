@@ -4,7 +4,7 @@ Edge detection can be performed using convolution. A filter (also known as a ker
 
 In this context, `*` is the typical symbol for convolution.
 
-### Convolution Operation
+### 1.1 Convolution Operation
 
 For each pixel in the image, the convolution operation computes the sum of the element-wise multiplication between the image region and the filter:
 \[
@@ -44,8 +44,12 @@ kernel = kernel.reshape((3, 3, 1, 1))
 output = tf.nn.conv2d(image, kernel, strides=[1, 1, 1, 1], padding='VALID')
 
 print(output)
+```
+### 1.2 other kinds of filter：
+- **sobel filter**
+- **scharr filter**
 
-    other kinds of filter
-1.sobel filter
-2.scharr filter
-can also make the machine learn the 9 parameters itself
+can also make the machine learn the 9 parameters itself.
+
+Below is an illustration of those different filter:
+![Edge Filter Example](edged2.png)
