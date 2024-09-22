@@ -53,3 +53,14 @@ can also make the machine learn the 9 parameters itself.
 
 Below is an illustration of those different filter:
 ![Edge Filter Example](../images/edged2.png)
+
+### 1.3 padding
+to avoid getting a very small image and throwing away a lot of the information from the edges of the image, we can pad the image.
+
+after padding, the length of edge may become ( n + 2*p - f + 1) ^ 2 from (n - f + 1) ^ 2
+
+same convolutions: p = (f - 1)/2, so f usually be an odd.
+
+### 1.4 Strided convolution
+步长stride = 2, [(n + 2*p - f) / s + 1] ;
+ 
