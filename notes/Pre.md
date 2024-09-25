@@ -70,4 +70,4 @@ n * n * n_c convolution with f * f * f = (n - f + 1) * (n - f + 1) * n_fliter_nu
 n_c is also known as depth or channel
 
 Below is an illustration of a multidimentioal convolution  filter:
-![Edge Detection Example](../images/convolution1.png)
+![Edge Detection Example](../images/3Dconvolution1.png)
