@@ -62,5 +62,12 @@ after padding, the length of edge may become ( n + 2*p - f + 1) ^ 2 from (n - f 
 same convolutions: p = (f - 1)/2, so f usually be an odd.
 
 ### 1.4 Strided convolution
-步长stride = 2, [(n + 2*p - f) / s + 1] ;
+(stride = 2, [(n + 2*p - f) / s + 1] ;
  
+### 1.5  multidimentioal convolution  
+n * n * n_c convolution with f * f * f = (n - f + 1) * (n - f + 1) * n_fliter_number
+
+n_c is also known as depth or channel
+
+Below is an illustration of a multidimentioal convolution  filter:
+![Edge Detection Example](../images/convolution1.png)
